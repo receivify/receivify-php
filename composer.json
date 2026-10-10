@@ -1,0 +1,31 @@
+{
+    "name": "receivify/receivify",
+    "description": "Official PHP SDK for Receivify, the non-custodial crypto payment gateway: invoices, forwarding addresses, payment links and signed webhooks. One file, no dependencies.",
+    "type": "library",
+    "license": "MIT",
+    "keywords": ["receivify", "crypto", "bitcoin", "ethereum", "usdt", "stablecoins", "payments", "payment-gateway", "webhooks", "non-custodial"],
+    "homepage": "https://receivify.io",
+    "authors": [
+        { "name": "Receivify", "homepage": "https://receivify.io" }
+    ],
+    "support": {
+        "issues": "https://github.com/receivify/receivify-php/issues",
+        "source": "https://github.com/receivify/receivify-php",
+        "docs": "https://receivify.io/docs"
+    },
+    "require": {
+        "php": ">=7.4",
+        "ext-curl": "*",
+        "ext-json": "*",
+        "ext-hash": "*"
+    },
+    "autoload": {
+        "classmap": ["src/"]
+    },
+    "scripts": {
+        "test": "php tests/run-tests.php"
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
